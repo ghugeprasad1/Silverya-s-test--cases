@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.verifyElementText(findTestObject('Page_MyCareCoverage/Text_HospitalClient'), 'Hospital Client:')
 

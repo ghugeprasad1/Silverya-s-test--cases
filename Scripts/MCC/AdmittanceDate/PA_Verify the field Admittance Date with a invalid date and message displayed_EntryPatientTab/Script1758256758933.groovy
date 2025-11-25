@@ -34,7 +34,7 @@ try {
 
     WebUI.comment('Future date (Today + 7 days): ' + futureDate)
 
-    WebUI.callTestCase(findTestCase('MCC/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 

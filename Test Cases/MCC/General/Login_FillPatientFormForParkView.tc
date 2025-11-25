@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify edit opens on the first page when only Page 1 is completed</name>
+   <name>Login_FillPatientFormForParkView</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>46b1826f-277e-4e14-ac10-05a1db68f830</testCaseGuid>
+   <testCaseGuid>adf128cc-8881-49a6-99fa-2a516184a646</testCaseGuid>
 </TestCaseEntity>

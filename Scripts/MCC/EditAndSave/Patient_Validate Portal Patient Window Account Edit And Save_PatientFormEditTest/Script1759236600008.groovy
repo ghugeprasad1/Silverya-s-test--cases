@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/Patient Entry_HandleCAPTCHA'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/Patient Entry_HandleCAPTCHA'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'), 'monday')
 

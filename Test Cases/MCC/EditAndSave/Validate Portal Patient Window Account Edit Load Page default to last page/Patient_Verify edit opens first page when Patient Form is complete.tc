@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify edit opens first page when Patient Form is complete</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1e200330-6aea-4557-af9d-609554a839eb</testCaseGuid>
+</TestCaseEntity>

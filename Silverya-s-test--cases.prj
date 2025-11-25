@@ -6,11 +6,12 @@
    <UUID>c9a21db7-8796-4015-a841-e1c9b5cca7e9</UUID>
    <createdEdition>ENTERPRISE</createdEdition>
    <createdVersion>10.4.1</createdVersion>
-   <freeLicense>false</freeLicense>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>10.4.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\SilveyaRexee_a3qfdl8\git\Silverya-s-test--cases\Silverya-s-test--cases.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

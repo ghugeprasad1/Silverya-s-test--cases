@@ -29,7 +29,7 @@ try {
 	String futureDate = new SimpleDateFormat('MM/dd/yyyy').format(cal.getTime())
 	WebUI.comment('Future date (Today + 2 days): ' + futureDate)
 	
-    WebUI.callTestCase(findTestCase('MCC/Patient Entry_HandleCAPTCHA'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/Patient Entry_HandleCAPTCHA'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'), 'mongo')
 

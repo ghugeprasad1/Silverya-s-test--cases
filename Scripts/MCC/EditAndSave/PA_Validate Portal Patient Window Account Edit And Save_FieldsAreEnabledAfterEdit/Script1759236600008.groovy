@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    def lastName = WebUI.callTestCase(findTestCase('MCC/FillPatientForm'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/Login_FillPatientFormForParkView'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 

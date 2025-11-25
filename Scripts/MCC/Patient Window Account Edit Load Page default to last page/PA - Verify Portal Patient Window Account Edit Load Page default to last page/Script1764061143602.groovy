@@ -16,38 +16,36 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-WebUI.openBrowser('')
+try {
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/Login_FillPatientFormForParkView'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl(GlobalVariable.parkviewUrl)
+    WebUI.delay(10)
 
-WebUI.maximizeWindow()
+    WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_Username_last'), GlobalVariable.username)
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_Password_last'), GlobalVariable.password)
+    WebUI.click(findTestObject('Page_MyCareCoverage/Button_ActionThreeDots'))
 
-// Dynamic iframe
-TestObject recaptchaFrame = new TestObject('recaptchaFrame')
+    WebUI.click(findTestObject('Page_MyCareCoverage/list_Edit_Actions'))
 
-recaptchaFrame.addProperty('xpath', ConditionType.EQUALS, '//iframe[contains(@name,\'a-\') and contains(@src,\'recaptcha\')]')
+    WebUI.switchToWindowIndex(1)
 
-WebUI.waitForElementVisible(recaptchaFrame, 5)
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseholdDisabled'), 0)
 
-WebUI.switchToFrame(recaptchaFrame, 5)
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/Header_Household'), 0)
+}
+catch (Exception e) {
+    WebUI.comment('❌ Test failed: ' + e.getMessage())
 
-// Dynamic checkbox
-TestObject recaptchaCheckbox = new TestObject('recaptchaCheckbox')
+    WebUI.takeScreenshot()
 
-recaptchaCheckbox.addProperty('xpath', ConditionType.EQUALS, '//span[@id=\'recaptcha-anchor\']')
-
-WebUI.waitForElementClickable(recaptchaCheckbox, 5)
-
-WebUI.click(recaptchaCheckbox)
-
-// Return to main page
-WebUI.switchToDefaultContent()
-
-WebUI.click(findTestObject('Page_MyCareCoverage/button_Login'))
+    throw e
+} 
+// You can log or take a screenshot here if needed
+// rethrow for reporting
+finally { 
+    WebUI.closeBrowser()
+}
 

@@ -99,7 +99,7 @@
       <guid>c6b64927-7ab4-4465-914d-7ceab3d483db</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/MCC/EditAndSave/Validate Portal Patient Window Account Edit Load Page default to last page/Verify edit opens on the first page when only Page 1 is completed</testCaseId>
+      <testCaseId>Test Cases/MCC/EditAndSave/Validate Portal Patient Window Account Edit Load Page default to last page/PA_Verify edit opens first page when Patient Form is complete</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

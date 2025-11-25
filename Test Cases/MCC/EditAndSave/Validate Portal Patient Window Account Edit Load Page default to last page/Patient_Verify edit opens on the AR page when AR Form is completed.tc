@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>FillPatientForm</name>
+   <name>Patient_Verify edit opens on the AR page when AR Form is completed</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>adf128cc-8881-49a6-99fa-2a516184a646</testCaseGuid>
+   <testCaseGuid>fac01c22-71e8-4f03-ac28-aa186f1a4553</testCaseGuid>
 </TestCaseEntity>

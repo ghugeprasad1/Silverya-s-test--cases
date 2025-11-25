@@ -16,31 +16,36 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-// Dynamic iframe
-WebUI.openBrowser('')
+try {
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/Patient entry Login and Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl(GlobalVariable.communityPatientIntakeUrl)
+    WebUI.delay(10)
 
-WebUI.click(findTestObject('Page_MyCareCoverage/list_PatientIntake_EnglishLanguage'))
+    WebUI.callTestCase(findTestCase('MCC/General/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_MyCareCoverage/button_PatientIntake_Save'))
+    WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
-TestObject recaptchaFrame = new TestObject('recaptchaFrame')
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
 
-recaptchaFrame.addProperty('xpath', ConditionType.EQUALS, '//iframe[contains(@name,\'a-\') and contains(@src,\'recaptcha\')]')
+    WebUI.click(findTestObject('Page_MyCareCoverage/Button_ActionThreeDots'))
 
-WebUI.waitForElementVisible(recaptchaFrame, 2)
+    WebUI.click(findTestObject('Page_MyCareCoverage/list_Edit_Actions'))
 
-WebUI.switchToFrame(recaptchaFrame, 2)
+    WebUI.switchToWindowIndex(1)
 
-// Dynamic checkbox
-TestObject recaptchaCheckbox = new TestObject('recaptchaCheckbox')
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/header_HouseHoldPageHeader'), 0)
+}
+catch (Exception e) {
+    WebUI.comment('❌ Test failed: ' + e.getMessage())
 
-recaptchaCheckbox.addProperty('xpath', ConditionType.EQUALS, '//span[@id=\'recaptcha-anchor\']')
+    WebUI.takeScreenshot()
 
-WebUI.waitForElementClickable(recaptchaCheckbox, 2)
-
-WebUI.click(recaptchaCheckbox)
+    throw e
+} 
+// You can log or take a screenshot here if needed
+// rethrow for reporting
+finally { 
+    WebUI.closeBrowser()
+}
 

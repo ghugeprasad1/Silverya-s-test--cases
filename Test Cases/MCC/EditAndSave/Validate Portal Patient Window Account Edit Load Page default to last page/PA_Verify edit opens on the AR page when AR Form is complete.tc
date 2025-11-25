@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify edit opens on the AR page when AR Form is complete</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5f35ab6e-312e-4560-ac5b-4596a51b92a9</testCaseGuid>
+</TestCaseEntity>
