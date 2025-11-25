@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>hospital Selector Select Value</name>
+   <tag></tag>
+   <elementGuidId>70c8cd27-8638-42a8-9cfb-f2be2b64f2ce</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_MyCareCoverage/hospital Selector dropdown.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_MyCareCoverage/hospital Selector dropdown.png</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiBackdrop-root.MuiBackdrop-invisible.MuiModal-backdrop.css-esi9ax</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[normalize-space(text())='${option}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>id(&quot;hospital-select&quot;)</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6b57fe4e-d28e-4e1b-b6ab-39d6aaa59cef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>47c32c0d-5f60-405c-90bb-cd0150082489</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-esi9ax</value>
+      <webElementGuid>49594472-ee40-4a74-a96b-ca98f01885f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;menu-&quot;)/div[@class=&quot;MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-esi9ax&quot;]</value>
+      <webElementGuid>1e7acc17-6ea7-4a86-8c1a-7f198982720a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='menu-']/div</value>
+      <webElementGuid>d8e8ac29-6874-4579-90ab-38fa0c1aeb35</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div</value>
+      <webElementGuid>39e97387-84bb-453c-a6a3-1fab07262340</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

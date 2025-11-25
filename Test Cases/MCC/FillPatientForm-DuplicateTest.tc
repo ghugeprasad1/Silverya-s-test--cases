@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FillPatientForm-DuplicateTest</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>455accf3-d9d8-4b29-976b-5d9e63dd9064</testCaseGuid>
+</TestCaseEntity>

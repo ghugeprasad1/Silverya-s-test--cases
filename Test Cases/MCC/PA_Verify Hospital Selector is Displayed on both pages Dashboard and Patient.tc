@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the presence of Hospital Selector</description>
+   <name>PA_Verify Hospital Selector is Displayed on both pages Dashboard and Patient</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1af4ca3f-162e-4ea0-ad49-6b22a21c3d08</testCaseGuid>
+</TestCaseEntity>

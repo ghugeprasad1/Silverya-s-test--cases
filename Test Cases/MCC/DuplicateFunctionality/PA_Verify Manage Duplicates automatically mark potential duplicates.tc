@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify Manage Duplicates automatically mark potential duplicates</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dbb92f3b-cbd3-45c9-91d1-391e2af1f548</testCaseGuid>
+</TestCaseEntity>

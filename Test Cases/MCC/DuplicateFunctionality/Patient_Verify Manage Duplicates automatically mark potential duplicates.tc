@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify Manage Duplicates automatically mark potential duplicates</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cbc1eb0b-8c8a-46f0-a856-a6b33473ffb7</testCaseGuid>
+</TestCaseEntity>

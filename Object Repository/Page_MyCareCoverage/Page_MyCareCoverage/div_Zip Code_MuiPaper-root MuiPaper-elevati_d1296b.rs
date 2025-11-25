@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Zip Code_MuiPaper-root MuiPaper-elevati_d1296b</name>
+   <tag></tag>
+   <elementGuidId>79512b34-ebce-4cb3-b52f-cb9a947a4bb0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div[2]/form/div/div[3]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5944e475-1ca4-412b-bd76-5e55b02667bc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-oll7ag</value>
+      <webElementGuid>a5c2823c-2777-48a9-bf70-c7cc164e4462</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Additional InformationDo you currently have health insurance, including Medicare or Medicaid? *YesNoDoes this visit relate to an accident? *YesNoAre you currently incarcerated? *YesNoWere you ever in foster care? *YesNoIn the last 60 days or the upcoming 60 days, have you lost, or will you lose health insurance? *YesNo</value>
+      <webElementGuid>1c001c67-d811-4ab0-8a36-9d1351fb8e2b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;MuiBox-root css-101arav&quot;]/div[@class=&quot;MuiStack-root css-1phb13z&quot;]/form[1]/div[@class=&quot;MuiGrid-root MuiGrid-container css-19wgqq5&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1y0460w&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-oll7ag&quot;]</value>
+      <webElementGuid>16611e8c-3433-4bf5-ad3f-26cd5d513f6b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div[2]/form/div/div[3]/div</value>
+      <webElementGuid>a5fcd590-dfb9-4563-bdf2-9186dc9f502b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div/div[3]/div</value>
+      <webElementGuid>2308783d-eeba-41f3-b4a3-be0f27bff678</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Additional InformationDo you currently have health insurance, including Medicare or Medicaid? *YesNoDoes this visit relate to an accident? *YesNoAre you currently incarcerated? *YesNoWere you ever in foster care? *YesNoIn the last 60 days or the upcoming 60 days, have you lost, or will you lose health insurance? *YesNo' or . = 'Additional InformationDo you currently have health insurance, including Medicare or Medicaid? *YesNoDoes this visit relate to an accident? *YesNoAre you currently incarcerated? *YesNoWere you ever in foster care? *YesNoIn the last 60 days or the upcoming 60 days, have you lost, or will you lose health insurance? *YesNo')]</value>
+      <webElementGuid>82947f0a-dbb1-4da7-b7d1-de410e97b1a0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

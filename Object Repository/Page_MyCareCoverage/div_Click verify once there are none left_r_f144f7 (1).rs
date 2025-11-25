@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Click verify once there are none left_r_f144f7 (1)</name>
+   <tag></tag>
+   <elementGuidId>8b2b99fd-bf81-41c5-b014-b82f0acec5cb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#1 > div.rc-image-tile-target > div.rc-image-tile-wrapper > div.rc-image-tile-overlay</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@id='1']/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;\31 &quot;]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7c4fce4b-d7f6-408d-86b7-0c69f2b00774</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>rc-image-tile-overlay</value>
+      <webElementGuid>4a947711-4d52-4c7b-b144-9138d5802bf8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;1&quot;)/div[@class=&quot;rc-image-tile-target&quot;]/div[@class=&quot;rc-image-tile-wrapper&quot;]/div[@class=&quot;rc-image-tile-overlay&quot;]</value>
+      <webElementGuid>a5166298-fd2a-42fa-8123-d7ff65715508</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_MyCareCoverage/iframe_html1body1div2div4iframe1_c-ipkxrhqkuqo5</value>
+      <webElementGuid>ff88ac61-3ae2-4209-bca9-71b566ccb7fb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//td[@id='1']/div/div/div</value>
+      <webElementGuid>8bd114ac-5908-45f1-9539-02f17d992855</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/div/div/div</value>
+      <webElementGuid>7715b10d-ce5a-4f43-9b6a-aa16bfca6949</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

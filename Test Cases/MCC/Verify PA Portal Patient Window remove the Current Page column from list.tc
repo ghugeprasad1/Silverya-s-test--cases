@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify PA Portal Patient Window remove the Current Page column from list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>91853d05-b88d-4907-8393-f89d0a584fc6</testCaseGuid>
+</TestCaseEntity>

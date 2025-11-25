@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Page url to login Community Hospital</description>
+      <initValue>'https://community-dev.revone.io/mcc_portal/?path=sign_in'</initValue>
+      <name>communityDevBaseUrl</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Username to login</description>
+      <initValue>'silveya.rexee@veltris.com'</initValue>
+      <name>DevuserName</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password to login</description>
+      <initValue>'Veltris2025!'</initValue>
+      <name>Devpassword</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Default Hospital name in selector</description>
+      <initValue>'deaconess'</initValue>
+      <name>DeaconessHospitalName</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Page url to login to River View Hospital</description>
+      <initValue>'https://riverview-dev.revone.io/mcc_portal/?path=sign_in'</initValue>
+      <name>RiverViewDevBaseUrl</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Page url to login to Park View Hospital</description>
+      <initValue>'https://parkview-dev.revone.io/mcc_portal/?path=sign_in'</initValue>
+      <name>ParkViewDevBaseUrl</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'abhinav.madan@veltris.com'</initValue>
+      <name>StageuserName</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Veltris*456321'</initValue>
+      <name>Stagepassword</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://parkview-stage.revone.io/mcc_portal/?path=sign_in'</initValue>
+      <name>ParkViewStageBaseUrl</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

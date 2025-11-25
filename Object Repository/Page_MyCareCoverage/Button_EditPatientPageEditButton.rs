@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Button_EditPatientPageEditButton</name>
+   <tag></tag>
+   <elementGuidId>ac049cf0-a54a-4d1e-9c2b-090dad047b44</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-1jpfdw9</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Edit' or . = 'Edit')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[normalize-space()='Edit']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Edit&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e3d5fbb9-b4f5-466c-bfdf-97c7b804af77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1jpfdw9</value>
+      <webElementGuid>5bd78c63-651a-4c8b-967d-460e8f95ae2b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit</value>
+      <webElementGuid>776c6910-80db-42ac-ab63-09821deed59f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;MuiBox-root css-101arav&quot;]/div[@class=&quot;MuiStack-root css-1phb13z&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1vcjatt&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1w8m7b0&quot;]/label[@class=&quot;MuiFormControlLabel-root MuiFormControlLabel-labelPlacementStart css-1hynify&quot;]/span[@class=&quot;MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1jpfdw9&quot;]</value>
+      <webElementGuid>2f3cf423-2663-45ef-bf62-9ac2250fecf7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div[2]/div/div/label/span[2]</value>
+      <webElementGuid>466d3801-16e2-470b-9cb6-1f8ec85f7b25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Go'])[1]/following::span[5]</value>
+      <webElementGuid>ca6d225c-e3bb-4d03-a31a-bd8886d56e07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::span[5]</value>
+      <webElementGuid>7a307c39-53b7-4c40-bc24-4031df739720</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/preceding::span[1]</value>
+      <webElementGuid>a82b49a3-0cea-40b7-8f24-0fa8eefb3aad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Send PURL'])[1]/preceding::span[2]</value>
+      <webElementGuid>fa70ffb8-f332-4695-b59c-b2f77b7b4354</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Edit']/parent::*</value>
+      <webElementGuid>698b99ca-1c9d-4542-b92e-5af6ee9a8917</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]</value>
+      <webElementGuid>efdad427-6310-492a-81cd-b04f904bfded</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Edit' or . = 'Edit')]</value>
+      <webElementGuid>b0965032-254a-4e81-b6a0-c9fac55cccfa</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

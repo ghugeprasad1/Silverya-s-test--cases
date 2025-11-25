@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient entry Login and Fill Patient Details</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70646cd8-c2a6-49b6-96e5-88a11b0d5f90</testCaseGuid>
+</TestCaseEntity>

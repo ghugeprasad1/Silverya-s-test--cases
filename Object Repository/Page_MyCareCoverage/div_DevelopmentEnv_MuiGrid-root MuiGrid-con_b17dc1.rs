@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_DevelopmentEnv_MuiGrid-root MuiGrid-con_b17dc1</name>
+   <tag></tag>
+   <elementGuidId>9b70bfa3-83e6-4668-9789-b02ceb222387</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiGrid-root.MuiGrid-container.css-17r26s3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>94794eac-b15d-4b94-b4ea-f54adcd10db1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiGrid-root MuiGrid-container css-17r26s3</value>
+      <webElementGuid>171b8de1-a26d-4b8b-9050-2710b398c690</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Authenticating...You are being securely signed in. Please wait while we redirect you.Sign in to My Care CoverageEnter your details belowUsername *Username *Password *Password *LoginForgot your password© 2024 8.8.1 RevOne Companies</value>
+      <webElementGuid>b35dab0d-f3bc-4c6c-8a0b-7dcf4931ef87</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;MuiGrid-root MuiGrid-container css-17r26s3&quot;]</value>
+      <webElementGuid>079b1f98-dbd1-4f69-9287-68df8100c00d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[2]</value>
+      <webElementGuid>371b81de-8e0a-457d-b8fd-930f46416838</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div[2]</value>
+      <webElementGuid>4ef752a6-1839-4c45-86c5-2f6e267ce7e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Authenticating...You are being securely signed in. Please wait while we redirect you.Sign in to My Care CoverageEnter your details belowUsername *Username *Password *Password *LoginForgot your password© 2024 8.8.1 RevOne Companies' or . = 'Authenticating...You are being securely signed in. Please wait while we redirect you.Sign in to My Care CoverageEnter your details belowUsername *Username *Password *Password *LoginForgot your password© 2024 8.8.1 RevOne Companies')]</value>
+      <webElementGuid>0279af6d-9bff-4532-ac35-e092f9e3a550</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient Entry_HandleCAPTCHA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8bc29222-5ac6-4d10-a3ba-25b2fd50e720</testCaseGuid>
+</TestCaseEntity>

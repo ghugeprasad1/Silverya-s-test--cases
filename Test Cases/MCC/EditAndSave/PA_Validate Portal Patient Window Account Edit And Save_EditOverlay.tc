@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Validate Portal Patient Window Account Edit And Save_EditOverlay</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>69d6c9ca-212b-4b8e-9b5e-c9cc02f24e88</testCaseGuid>
+</TestCaseEntity>

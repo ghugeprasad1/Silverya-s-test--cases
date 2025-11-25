@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Validate Portal Patient Window Account Edit And Save_FieldsAreDisabledBeforeEdit</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aec65e81-2034-4604-8942-96a2400586c3</testCaseGuid>
+</TestCaseEntity>

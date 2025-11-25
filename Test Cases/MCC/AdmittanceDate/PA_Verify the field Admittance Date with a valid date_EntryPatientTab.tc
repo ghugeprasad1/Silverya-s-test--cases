@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify the field Admittance Date with a valid date_EntryPatientTab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>49b621db-8ad8-4062-a2f7-807f4381a437</testCaseGuid>
+</TestCaseEntity>

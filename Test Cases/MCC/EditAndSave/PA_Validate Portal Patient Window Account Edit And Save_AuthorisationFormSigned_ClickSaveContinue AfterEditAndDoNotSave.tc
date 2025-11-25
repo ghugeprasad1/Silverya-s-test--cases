@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Validate Portal Patient Window Account Edit And Save_AuthorisationFormSigned_ClickSaveContinue AfterEditAndDoNotSave</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>47aa2358-d308-4bc0-b770-9c3723526ff3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Validate Portal Patient Window Account Edit And Save_EditAndCancel</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28e659b2-849d-4a42-8690-d18c743a3270</testCaseGuid>
+</TestCaseEntity>

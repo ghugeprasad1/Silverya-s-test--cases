@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify the field Admittance Date_Fill PatientForm with Admittance Date Successfully</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>877c6e28-62f7-4894-8755-2446df412a4e</testCaseGuid>
+</TestCaseEntity>

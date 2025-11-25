@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify the question added to patient intake form if they have will lose insurance in 60 days_FillPatientFormSuccessfully</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fc0411f5-dcd2-4576-a7d7-9f822a9127ed</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_In the last 60 days or the upcoming 60_4e1f36</name>
+   <tag></tag>
+   <elementGuidId>b10cdc1c-29e1-4bb1-a8f2-ff385b3632f1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/form/div/div[3]/div/div[5]/div/div/div/div/label/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>3aab09eb-9f7d-4687-980f-00fec03308a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1jpfdw9</value>
+      <webElementGuid>63924b4a-1515-4598-9699-107f1cf5c455</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Yes</value>
+      <webElementGuid>096e0cd9-cb5d-40a2-82a2-0ac2b4fb1073</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/form[1]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1e2d1ti&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1y0460w&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-oll7ag&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item css-tn3bmg&quot;]/div[@class=&quot;MuiFormControl-root css-acdgo6&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-vijzuy&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item css-1wxaqej&quot;]/div[@class=&quot;MuiFormGroup-root MuiFormGroup-row MuiRadioGroup-root MuiRadioGroup-row css-51x0nr&quot;]/label[@class=&quot;MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ewse24&quot;]/span[@class=&quot;MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1jpfdw9&quot;]</value>
+      <webElementGuid>8e437b99-62f3-4632-9940-86c92b7b0f4c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/form/div/div[3]/div/div[5]/div/div/div/div/label/span[2]</value>
+      <webElementGuid>311c4d7d-af86-4298-b2aa-d8d6076d5fc6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[4]/following::span[5]</value>
+      <webElementGuid>44ce0f6c-fead-4ffa-961b-47e48515edc7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[5]/preceding::span[4]</value>
+      <webElementGuid>27c606bd-1e13-40a4-a4ed-93cfa2a7a399</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Income Source'])[1]/preceding::span[5]</value>
+      <webElementGuid>ed11e75e-3dbc-483f-9c28-13fb1680fd83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div/div/div/label/span[2]</value>
+      <webElementGuid>c9a2cb01-96c9-4620-8de7-51d7984b3aa9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Yes' or . = 'Yes')]</value>
+      <webElementGuid>443a4ca3-1e19-4bd5-a6ca-7c81b54c7c81</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

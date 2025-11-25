@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Add Income Source_MuiGrid-root MuiGrid-_3834bb</name>
+   <tag></tag>
+   <elementGuidId>b217eba4-a002-4528-a2f9-31200c2b0680</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div[3]/div[2]/form/div/div[4]/div/div[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>3a1bc66c-b17f-44a8-b6e0-515de1746a58</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiGrid-root MuiGrid-item css-tn3bmg</value>
+      <webElementGuid>0b5ab9d6-21ca-472f-a953-6f9101c82349</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Did you lose your job in the last 6 months? *YesNo</value>
+      <webElementGuid>f3bc20a9-d8c9-406b-af51-5d8a3bf1a363</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;MuiBox-root css-101arav&quot;]/div[@class=&quot;MuiStack-root css-1phb13z&quot;]/form[1]/div[@class=&quot;MuiGrid-root MuiGrid-container css-19wgqq5&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1y0460w&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-oll7ag&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item css-tn3bmg&quot;]</value>
+      <webElementGuid>c5fbf7c1-34fc-4d32-bcb1-ce0484d91266</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div[3]/div[2]/form/div/div[4]/div/div[3]</value>
+      <webElementGuid>f1b0bd89-7ee6-44da-b525-3bdce8cb8959</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Income Source'])[1]/following::div[1]</value>
+      <webElementGuid>92c2bdc6-7449-4ae1-b6a5-7b7a72b6b623</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Income Source'])[1]/following::div[1]</value>
+      <webElementGuid>595548a9-8ac4-4c3e-a694-8565dd2dde1f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div[3]</value>
+      <webElementGuid>a21793c0-38ab-428c-9d89-1f754a6598ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Did you lose your job in the last 6 months? *YesNo' or . = 'Did you lose your job in the last 6 months? *YesNo')]</value>
+      <webElementGuid>e4d3f9b5-5959-4619-8152-9eeeeac19045</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

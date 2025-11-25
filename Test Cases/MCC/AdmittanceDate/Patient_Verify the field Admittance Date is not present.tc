@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify the field Admittance Date is not present</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b920cb81-5479-4608-a0a1-adef7310a35b</testCaseGuid>
+</TestCaseEntity>

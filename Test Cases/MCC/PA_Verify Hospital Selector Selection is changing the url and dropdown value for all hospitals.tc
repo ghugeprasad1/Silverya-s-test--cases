@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify Hospital Selector Selection is changing the url and dropdown value for all hospitals</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2817a75c-4fe2-46b6-a3ef-357dbefb9f8b</testCaseGuid>
+</TestCaseEntity>

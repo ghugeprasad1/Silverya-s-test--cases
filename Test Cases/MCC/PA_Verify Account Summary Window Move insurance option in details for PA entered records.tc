@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify Account Summary Window Move insurance option in details for PA entered records</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c72d172-7324-4270-b4e1-3a1b04dd53de</testCaseGuid>
+</TestCaseEntity>

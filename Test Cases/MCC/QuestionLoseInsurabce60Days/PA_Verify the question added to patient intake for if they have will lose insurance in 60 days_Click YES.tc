@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify the question added to patient intake for if they have will lose insurance in 60 days_Click YES</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6d933648-8786-4bb0-8c05-6eb6ab91818d</testCaseGuid>
+</TestCaseEntity>
