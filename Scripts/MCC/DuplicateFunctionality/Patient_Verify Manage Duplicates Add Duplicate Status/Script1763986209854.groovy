@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/General/Patient entry Login and Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName1 = WebUI.callTestCase(findTestCase('MCC/General/Login_FillPatientForm_DuplicateTest'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 
@@ -39,7 +39,37 @@ try {
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'), 
         5)
 
-    WebUI.verifyElementClickable(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'))
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'))
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/header_DuplicateOverlayTitle'), 
+        0)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkDuplicateButtonForFirstRow_OnDuplicateDetailsOverlay'))
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/header_MarkDuplicateOverlayTitle'), 
+        0)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_YesButton_OnMarkDuplicateConfirmationMessage'))
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_CloseIcon_DuplicateDetailsOverlayClose'))
+
+    WebUI.click(findTestObject('Page_MyCareCoverage/tab_AddPatientLeftNavigation'))
+
+    WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
+
+    WebUI.clearText(findTestObject('Page_MyCareCoverage/PatientSearch'))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/checkbox_IncludeClosedAccounts_InPatientsTab'))
+
+    WebUI.delay(3)
+
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName2)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
+        3)
+
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())
