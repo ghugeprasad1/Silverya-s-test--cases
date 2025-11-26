@@ -48,7 +48,7 @@ try {
 
     WebUI.delay(10)
 
-    WebUI.callTestCase(findTestCase('MCC/General/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/Login_ParkViewHospital'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
