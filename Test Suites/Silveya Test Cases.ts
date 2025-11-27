@@ -36,14 +36,14 @@
       <guid>64d1fde2-a82f-4cba-9f6c-ba715291cf62</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/MCC/PA_Verify Hospital Selector is Displayed on both pages Dashboard and Patient</testCaseId>
+      <testCaseId>Test Cases/MCC/HospitalSelector/PA_Verify Hospital Selector is Displayed on both pages Dashboard and Patient</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>26226feb-cfc1-4a94-9752-86f7c720e86e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/MCC/PA_Verify Hospital Selector Selection is changing the url and dropdown value for all hospitals</testCaseId>
+      <testCaseId>Test Cases/MCC/HospitalSelector/PA_Verify Hospital Selector Selection is changing the url and dropdown value for all hospitals</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
