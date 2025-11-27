@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login_FillPatientForm_ParkViewHospital</name>
+   <name>Patient_HandleCAPTCHA</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>adf128cc-8881-49a6-99fa-2a516184a646</testCaseGuid>
+   <testCaseGuid>8bc29222-5ac6-4d10-a3ba-25b2fd50e720</testCaseGuid>
 </TestCaseEntity>

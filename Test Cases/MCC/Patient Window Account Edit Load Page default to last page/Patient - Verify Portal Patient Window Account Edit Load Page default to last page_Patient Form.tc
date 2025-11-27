@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login</name>
+   <name>Patient - Verify Portal Patient Window Account Edit Load Page default to last page_Patient Form</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>42a9d37c-6bf8-42e1-8f0d-a0eee27eb30e</testCaseGuid>
+   <testCaseGuid>344c04a8-b36b-4713-8c72-455d8314ff1e</testCaseGuid>
 </TestCaseEntity>

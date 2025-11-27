@@ -1,3 +1,4 @@
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -12,21 +13,33 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/General/Patient_Handle CAPTCHA Only'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/PA_Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.verifyElementNotPresent(findTestObject('Page_MyCareCoverage/Input_AdmittanceDate'), 0)
+    WebUI.verifyElementText(findTestObject('Page_MyCareCoverage/Text_HospitalClient'), 'Hospital Client:')
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/hospitalSelector'), 5)
+
+    WebUI.verifyElementText(findTestObject('Page_MyCareCoverage/button__GOHospitalSelector'), 'GO')
+
+    WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
+
+    WebUI.verifyElementText(findTestObject('Page_MyCareCoverage/Text_HospitalClient'), 'Hospital Client:')
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/hospitalSelector'), 0)
+
+    WebUI.verifyElementText(findTestObject('Page_MyCareCoverage/button__GOHospitalSelector'), 'GO')
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())
 
     WebUI.takeScreenshot()
+
+    WebUI.comment('📸 Screenshot captured successfully')
 
     throw e
 } 

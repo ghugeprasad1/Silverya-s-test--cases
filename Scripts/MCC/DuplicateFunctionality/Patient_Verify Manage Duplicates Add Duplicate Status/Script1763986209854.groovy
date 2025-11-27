@@ -19,11 +19,11 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
 try {
-    def lastName1 = WebUI.callTestCase(findTestCase('MCC/General/Login_FillPatientForm_DuplicateTest'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName1 = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Duplicate Test'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 
-    def lastName2 = WebUI.callTestCase(findTestCase('MCC/General/Login_FillPatientForm_DuplicateTest'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName2 = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Duplicate Test'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 

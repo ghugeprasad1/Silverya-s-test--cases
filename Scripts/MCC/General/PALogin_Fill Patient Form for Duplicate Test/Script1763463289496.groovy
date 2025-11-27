@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('MCC/General/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('MCC/General/PA_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //Define the map FIRST
 def numberWords = [(0) : 'zero', (1) : 'one', (2) : 'two', (3) : 'three', (4) : 'four', (5) : 'five', (6) : 'six', (7) : 'seven'

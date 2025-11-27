@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
 try {
-    String lastName = WebUI.callTestCase(findTestCase('MCC/General/Patient entry Login and Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
+    String lastName = WebUI.callTestCase(findTestCase('MCC/General/Patient_Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Continue_AddHouseHold'))
 
@@ -44,7 +44,7 @@ try {
 
     WebUI.delay(5)
 
-    WebUI.callTestCase(findTestCase('MCC/General/Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/PA_Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 

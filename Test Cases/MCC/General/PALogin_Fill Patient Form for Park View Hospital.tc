@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Patient - Verify Portal Patient Window Account Edit Load Page default to last page</name>
+   <name>PALogin_Fill Patient Form for Park View Hospital</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>344c04a8-b36b-4713-8c72-455d8314ff1e</testCaseGuid>
+   <testCaseGuid>adf128cc-8881-49a6-99fa-2a516184a646</testCaseGuid>
 </TestCaseEntity>

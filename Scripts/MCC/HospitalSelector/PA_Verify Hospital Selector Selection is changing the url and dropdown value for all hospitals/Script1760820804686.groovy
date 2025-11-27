@@ -20,7 +20,7 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/General/Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/PA_Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
 
     // Open dropdown
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/hospitalSelector'), 5)
