@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify Rearrange Insurance page to increase PT completions_Check the Authorisation Form Page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6974736e-833e-49d8-966d-11affce2a2cf</testCaseGuid>
+</TestCaseEntity>

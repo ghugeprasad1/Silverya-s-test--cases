@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_DownloadSignedAuthorizationForm</name>
+   <name>table_AuthorizationFormPage</name>
    <tag></tag>
-   <elementGuidId>6b0b4311-c675-4094-9c89-6ba6d537ace6</elementGuidId>
+   <elementGuidId>50b9b5ec-cdf7-4a90-9357-9657c1cbdd15</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[normalize-space()='Download']</value>
+         <value>//table[contains(@class,'MuiTable-root')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

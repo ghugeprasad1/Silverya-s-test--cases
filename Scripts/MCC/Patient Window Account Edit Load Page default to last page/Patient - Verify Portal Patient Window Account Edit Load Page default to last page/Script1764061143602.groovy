@@ -20,6 +20,7 @@ import org.openqa.selenium.Keys as Keys
 try {
     def lastName = WebUI.callTestCase(findTestCase('MCC/General/Patient entry Login and Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
+    //WebUI.callTestCase(findTestCase('MCC/General/Patient entry Login and Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
     WebUI.delay(10)
 
     WebUI.callTestCase(findTestCase('MCC/General/Login'), [:], FailureHandling.STOP_ON_FAILURE)

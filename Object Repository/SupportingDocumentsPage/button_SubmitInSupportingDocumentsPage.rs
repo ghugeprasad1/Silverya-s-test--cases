@@ -6,12 +6,11 @@
    <elementGuidId>42bd01f1-e59b-4a4e-878d-c47d5cc334c8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[normalize-space()='Submit' and contains(@class,'MuiButton-containedPrimary')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[normalize-space(text())='Submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -20,8 +20,6 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
-
 WebUI.navigateToUrl(GlobalVariable.parkviewUrl)
 
 WebUI.maximizeWindow()

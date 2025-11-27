@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify Rearrange Insurance page to increase PT completions_End to End Flow All pages arrangement</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b9c9bfdf-f185-4f90-abcd-2f39618cfa07</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify Rearrange Insurance page to increase PT completions_Check SupportingDocumentsPage</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ddf285c8-adf2-4d41-8a35-0a99dee29d74</testCaseGuid>
+</TestCaseEntity>

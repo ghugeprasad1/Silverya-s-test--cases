@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify Rearrange Insurance page to increase PT completions_End to End Flow All pages arrangement</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b9e95669-b4ac-430a-9dd9-62031a711fa5</testCaseGuid>
+</TestCaseEntity>

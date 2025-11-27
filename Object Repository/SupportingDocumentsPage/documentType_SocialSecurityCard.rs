@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_DownloadSignedAuthorizationForm</name>
+   <name>documentType_SocialSecurityCard</name>
    <tag></tag>
-   <elementGuidId>6b0b4311-c675-4094-9c89-6ba6d537ace6</elementGuidId>
+   <elementGuidId>a7130880-bfd0-446c-b037-923e03a21d3f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[normalize-space()='Download']</value>
+         <value>//p[normalize-space(text())=&quot;Social Security Card&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

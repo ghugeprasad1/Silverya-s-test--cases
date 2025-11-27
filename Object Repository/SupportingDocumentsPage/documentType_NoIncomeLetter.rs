@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_DownloadSignedAuthorizationForm</name>
+   <name>documentType_NoIncomeLetter</name>
    <tag></tag>
-   <elementGuidId>6b0b4311-c675-4094-9c89-6ba6d537ace6</elementGuidId>
+   <elementGuidId>acfe7780-2cbf-4f9f-8597-c410c640ddec</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[normalize-space()='Download']</value>
+         <value>//p[normalize-space(text())=&quot;No Income Letter&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
