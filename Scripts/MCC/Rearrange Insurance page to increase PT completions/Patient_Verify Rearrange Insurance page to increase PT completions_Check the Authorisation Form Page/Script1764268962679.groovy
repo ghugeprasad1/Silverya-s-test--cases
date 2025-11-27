@@ -18,23 +18,22 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/General/Login_FillPatientForm_ParkViewHospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/Patient entry Login and Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseholdEnabled'), 3)
-
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/header_HouseHoldPageHeader'), 3)
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseHoldMember_PatientIntakeEntry'), 
+        0)
 
     WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Continue_AddHouseHold'))
 
-    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 3)
-
-    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/tableAllColumnNames'), 0)
+    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 0)
+	
+	WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/tableAllColumnNames'), 0)
 
     WebUI.click(findTestObject('AuthorizationFormPage/button_EnabledSignAuthorizationButton_Active'))
 
-    WebUI.verifyElementPresent(findTestObject('AuthorizationForm/signPad_ARForm'), 3)
+    WebUI.verifyElementPresent(findTestObject('AuthorizationForm/signPad_ARForm'), 0)
 
     WebUI.clickOffset(findTestObject('AuthorizationForm/signPad_ARForm'), 10, 10)
 
@@ -45,22 +44,19 @@ try {
 
     WebUI.click(findTestObject('AuthorizationForm/button_ContinueInARForm'))
 
-    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 3)
+    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/link_DownloadSignedAuthorizationForm'), 3)
-
-    WebUI.delay(3)
-
-    //  WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/table_AuthorizationFormPage'), 3)
-    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/tableAllColumnNames'), 3)
+    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/link_DownloadSignedAuthorizationForm'), 0)
+	
+	WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/tableAllColumnNames'), 0)
 
     WebUI.click(findTestObject('AuthorizationFormPage/button_IAmReadyToUploadDocuments'))
 
-    WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/header_SupportingDocumentsPage'), 3)
-
-    WebUI.click(findTestObject('SupportingDocumentsPage/button_SubmitInSupportingDocumentsPage'))
-
-    WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/header_SubmittedInformationPageHeader'), 3)
+    WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/header_SupportingDocumentsPage'), 0)
+	
+	WebUI.click(findTestObject('SupportingDocumentsPage/button_SubmitInSupportingDocumentsPage'))
+	
+	WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/header_SubmittedInformationPageHeader'), 0)
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())
