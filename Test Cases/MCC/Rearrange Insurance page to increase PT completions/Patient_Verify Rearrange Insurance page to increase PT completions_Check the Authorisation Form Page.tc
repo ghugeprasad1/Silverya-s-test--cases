@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Patient_Verify</name>
+   <name>Patient_Verify Rearrange Insurance page to increase PT completions_Check the Authorisation Form Page</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
