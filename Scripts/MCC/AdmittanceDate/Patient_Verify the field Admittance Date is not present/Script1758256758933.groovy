@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/General/Patient_Handle CAPTCHA Only'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/Patient Entry_HandleCAPTCHA'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.verifyElementNotPresent(findTestObject('Page_MyCareCoverage/Input_AdmittanceDate'), 0)
 }

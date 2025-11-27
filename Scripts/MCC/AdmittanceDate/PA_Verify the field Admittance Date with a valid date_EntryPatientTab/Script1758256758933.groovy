@@ -35,7 +35,7 @@ try {
 
     String expectedDate = new SimpleDateFormat('MM/dd/yyyy').format(cal.getTime())
 
-    WebUI.callTestCase(findTestCase('MCC/General/Login_ParkViewHospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/PA_Login_CommunityHospital'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 

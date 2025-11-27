@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PA</name>
+   <name>PA - Verify Portal Patient Window Account Edit Load Page default to last page_AR Form</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

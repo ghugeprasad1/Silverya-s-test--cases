@@ -27,20 +27,7 @@ WebUI.click(findTestObject('Page_MyCareCoverage/list_PatientIntake_EnglishLangua
 
 WebUI.click(findTestObject('Page_MyCareCoverage/button_PatientIntake_Save'))
 
-TestObject recaptchaFrame = new TestObject('recaptchaFrame')
+WebUI.verifyElementPresent(findTestObject('Login/patient_CAPTCHA'), 0)
 
-recaptchaFrame.addProperty('xpath', ConditionType.EQUALS, '//iframe[contains(@name,\'a-\') and contains(@src,\'recaptcha\')]')
-
-WebUI.waitForElementVisible(recaptchaFrame, 2)
-
-WebUI.switchToFrame(recaptchaFrame, 2)
-
-// Dynamic checkbox
-TestObject recaptchaCheckbox = new TestObject('recaptchaCheckbox')
-
-recaptchaCheckbox.addProperty('xpath', ConditionType.EQUALS, '//span[@id=\'recaptcha-anchor\']')
-
-WebUI.waitForElementClickable(recaptchaCheckbox, 2)
-
-WebUI.click(recaptchaCheckbox)
+WebUI.click(findTestObject('Login/patient_CAPTCHA'))
 
