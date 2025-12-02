@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Patient_Validate Portal Patient Window Account Edit And Save_PatientFormEditTest</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>d7cac83f-28a2-45ec-9b98-2acccc65e0b4</testCaseGuid>
-</TestCaseEntity>

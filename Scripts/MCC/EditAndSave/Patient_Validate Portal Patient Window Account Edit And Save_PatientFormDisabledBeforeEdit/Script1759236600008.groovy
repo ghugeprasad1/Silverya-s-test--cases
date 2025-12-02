@@ -18,20 +18,32 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/Patient_Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.delay(10)
+    WebUI.callTestCase(findTestCase('MCC/General/PA_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_EditPatient_InAddHouseholdPage'))
+    WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/header_EditPatientPageHeader'), 
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage/Button_ActionThreeDots'))
+
+    WebUI.click(findTestObject('Page_MyCareCoverage/list_Edit_Actions'))
+
+    WebUI.switchToWindowIndex(1)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/Header_Household'), 0)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseholdDisabled'), 0)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Back_PageBottomButton'))
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/input_EmailFieldPatientIntakeForm_Disabled'), 
         0)
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/input_LastNameFieldIsDisabled'), 
-        0)
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/checkbox_Edit_PatientsTabPageHeader'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/input_MiddleNameFieldIsEnabled'), 
-        0)
+    WebUI.verifyElementNotPresent(findTestObject('Page_MyCareCoverage/SaveAndContinue_Button'), 0)
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())

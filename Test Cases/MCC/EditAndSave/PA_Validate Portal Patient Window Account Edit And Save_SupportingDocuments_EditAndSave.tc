@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>PA_Validate Portal Patient Window Account Edit And Save_SupportingDocuments_EditAndSave</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>67e8c202-27ae-4b3d-a889-a0f7799e3041</testCaseGuid>
-</TestCaseEntity>

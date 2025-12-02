@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>patient_CAPTCHA</name>
+   <name>button_EditPatient_InAddHouseholdPage</name>
    <tag></tag>
-   <elementGuidId>8ba7d398-9f96-4724-959e-9255e86af41e</elementGuidId>
+   <elementGuidId>2bc7d6b9-e415-4eee-af34-91418bd96c26</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@role='checkbox' and @id='recaptcha-anchor']</value>
+         <value>//button[normalize-space()='Edit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

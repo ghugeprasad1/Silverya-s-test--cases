@@ -18,7 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], 
+        FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.delay(10)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
@@ -58,14 +61,11 @@ try {
     WebUI.click(findTestObject('Page_MyCareCoverage/button_CancelbtnOnDiscardChangesOverlay'))
 
     WebUI.delay(10)
-	WebUI.verifyElementAttributeValue(
-		findTestObject('Page_MyCareCoverage/Input_AddressLine2'),
-		'value',        // the attribute to check
-		'abc',          // expected value
-		5               // timeout in seconds
-	)
-	//WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/checkbox_CancelAndDiscardChanges_EditFunction'), 0)
 
+    WebUI.verifyElementAttributeValue(findTestObject('Page_MyCareCoverage/Input_AddressLine2'), 'value' // the attribute to check
+        , 'abc' // expected value
+        , 5 // timeout in seconds
+        ) //WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/checkbox_CancelAndDiscardChanges_EditFunction'), 0)
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())

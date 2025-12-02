@@ -18,7 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], 
+        FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.delay(10)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
@@ -40,7 +43,7 @@ try {
 
     WebUI.click(findTestObject('Page_MyCareCoverage/button_GotItOnEditOverlay'))
 
-    WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Back_PageBottomButton'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Back_PageBottomButton'))
 
     WebUI.setText(findTestObject('Page_MyCareCoverage/Input_AddressLine2'), 'abc')
 

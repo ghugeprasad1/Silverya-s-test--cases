@@ -18,13 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], 
+        FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Continue_AddHouseHold'))
-
-    WebUI.click(findTestObject(null))
-
-    WebUI.delay(5)
+    WebUI.delay(10)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
@@ -36,13 +33,11 @@ try {
 
     WebUI.switchToWindowIndex(1)
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseholdDisabled'), 0)
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/header_HouseHoldPageHeader'), 0)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/Next_Button'))
 
-    WebUI.click(findTestObject('Page_MyCareCoverage/Next_Button'))
-
-    WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/header_SupportingDocumentsPage'), 0)
+    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 0)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/checkbox_Edit_PatientsTabPageHeader'))
 
@@ -50,9 +45,43 @@ try {
 
     WebUI.click(findTestObject('Page_MyCareCoverage/button_GotItOnEditOverlay'))
 
+    WebUI.click(findTestObject('AuthorizationFormPage/button_EnabledSignAuthorizationButton_Active'))
+
+    WebUI.verifyElementPresent(findTestObject('AuthorizationForm/signPad_ARForm'), 0)
+
+    WebUI.clickOffset(findTestObject('AuthorizationForm/signPad_ARForm'), 10, 10)
+
+    // Draw a freehand scribble
+    WebUI.dragAndDropByOffset(findTestObject('AuthorizationForm/signPad_ARForm'), 30, 10)
+
+    WebUI.dragAndDropByOffset(findTestObject('AuthorizationForm/signPad_ARForm'), 20, 30)
+
+    WebUI.click(findTestObject('AuthorizationForm/button_ContinueInARForm'))
+
+    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 0)
+
+    WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/link_DownloadSignedAuthorizationForm'), 0)
+
+    WebUI.click(findTestObject('AuthorizationFormPage/button_SaveAndContinue'))
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/message_ContinueSaveOverlayTitle'), 
+        0)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_SaveChanges_ContinueSaveOverlay'))
+
     WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/header_SupportingDocumentsPage'), 0)
 
-    WebUI.click(findTestObject('SupportingDocumentsPage/button_AddPhotoIcon'))
+    WebUI.click(findTestObject('AuthorizationFormPage/button_SaveAndContinue'))
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/message_ContinueSaveOverlayTitle'), 
+        0)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_SaveChanges_ContinueSaveOverlay'))
+
+    WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/header_SubmittedInformationPageHeader'), 0)
+
+    WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/update_AuthorizationFormUnderDocumentsSubmitted_InSubmissionConfirmationPage'), 
+        0)
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())

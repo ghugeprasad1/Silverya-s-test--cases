@@ -58,9 +58,9 @@ WebUI.click(findTestObject('Page_MyCareCoverage/input_State_PatientForm'))
 
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_State_PatientForm'), 'Kentucky')
 
-WebUI.click(findTestObject('Page_MyCareCoverage/list_SelectStateOption_PatientForm'))
-
-WebUI.click(findTestObject('Page_MyCareCoverage/Page_MyCareCoverage/Page_MyCareCoverage/list_KentuckyStateOption_PatientForm'))
+//WebUI.click(findTestObject('Page_MyCareCoverage/list_SelectStateOption_PatientForm'))
+//
+//WebUI.click(findTestObject('Page_MyCareCoverage/Page_MyCareCoverage/Page_MyCareCoverage/list_KentuckyStateOption_PatientForm'))
 
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_ZipCode_PatientForm'), '95126')
 

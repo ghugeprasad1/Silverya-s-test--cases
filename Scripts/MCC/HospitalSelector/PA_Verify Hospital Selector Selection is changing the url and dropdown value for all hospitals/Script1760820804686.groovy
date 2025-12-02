@@ -62,8 +62,8 @@ try {
     println('✅ Validation passed for: ' + hospitalName)
     }
     
-    WebUI.delay(5 // Optional: reopen dropdown for next iteration
-    ) 
+    WebUI.delay(5) // Optional: reopen dropdown for next iteration
+  
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())

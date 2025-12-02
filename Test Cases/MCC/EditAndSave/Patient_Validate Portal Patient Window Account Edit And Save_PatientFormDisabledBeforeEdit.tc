@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SUPP</name>
+   <name>Patient_Validate Portal Patient Window Account Edit And Save_PatientFormDisabledBeforeEdit</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>be5d9ba2-6095-485c-a54c-3325214190c8</testCaseGuid>
+   <testCaseGuid>d7cac83f-28a2-45ec-9b98-2acccc65e0b4</testCaseGuid>
 </TestCaseEntity>

@@ -26,8 +26,22 @@ WebUI.navigateToUrl(GlobalVariable.parkViewPatientIntakeUrl)
 WebUI.click(findTestObject('Page_MyCareCoverage/list_PatientIntake_EnglishLanguage'))
 
 WebUI.click(findTestObject('Page_MyCareCoverage/button_PatientIntake_Save'))
+// Dynamic iframe
+TestObject recaptchaFrame = new TestObject('recaptchaFrame')
 
-WebUI.verifyElementPresent(findTestObject('Login/patient_CAPTCHA'), 0)
+recaptchaFrame.addProperty("xpath", ConditionType.EQUALS,
+	"//iframe[contains(@src,'recaptcha') and contains(@src,'anchor')]")
 
-WebUI.click(findTestObject('Login/patient_CAPTCHA'))
+WebUI.waitForElementVisible(recaptchaFrame, 5)
 
+WebUI.switchToFrame(recaptchaFrame, 5)
+
+// Dynamic checkbox
+TestObject recaptchaCheckbox = new TestObject('recaptchaCheckbox')
+
+recaptchaCheckbox.addProperty("xpath", ConditionType.EQUALS,
+    "//span[@id='recaptcha-anchor']")
+
+WebUI.waitForElementClickable(recaptchaCheckbox, 5)
+
+WebUI.click(recaptchaCheckbox)

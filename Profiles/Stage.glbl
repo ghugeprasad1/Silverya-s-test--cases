@@ -48,7 +48,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://parkview-dev.revone.io/mcc_intake/?path=patient_info'</initValue>
+      <initValue>'https://parkview-stage.revone.io/mcc_intake/?path=patient_info'</initValue>
       <name>parkViewPatientIntakeUrl</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
