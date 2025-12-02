@@ -26,40 +26,26 @@ try {
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/hospitalSelector'), 5)
 
     // Load test data
-    def hospitalData = TestDataFactory.findTestData('Data Files/Hospitals')
-
-    // Loop through all hospital names in Excel
-    for (def i = 1; i <= hospitalData.getRowNumbers(); i++) {
-    String hospitalName = hospitalData.getValue('Hospital Name', i)
-	    
-	// Select the hospital in dropdown
-    TestObject dynamicHospital = new TestObject('dynamicHospital')
-
-    dynamicHospital.addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS, "//li[@role='option' and normalize-space()='$hospitalName']")
-	// dynamicHospital.addProperty('xpath', com.kms.katalon.core.testobject.ConditionType.EQUALS, "//li[@role='option' and contains(text(), '$hospitalName')]")
-    
-	WebUI.click(findTestObject('Page_MyCareCoverage/hospitalSelector'))
-		
-    // Click the hospital
-    WebUI.click(dynamicHospital)
+	def mappingData = TestDataFactory.findTestData(GlobalVariable.HospitalList)
 	
-    // Click Go/Confirm if needed
-	WebUI.click(findTestObject('Page_MyCareCoverage/button__GOHospitalSelector'))
-
-    // Validate URL or some element specific to the hospital
-    String currentUrl = WebUI.getUrl()
-
-    String cleanHospitalName = hospitalName.replaceAll('\\s', '').toLowerCase()
-
-    String expectedPattern = ('.*' + cleanHospitalName) + '.*'
-
-    WebUI.verifyMatch(currentUrl.toLowerCase(), expectedPattern, true)
-
-    TestObject hospitalDropdownValue = new TestObject('hospitalDropdownValue')
-
-    hospitalDropdownValue.addProperty('xpath', ConditionType.EQUALS, "//div[@id='hospital-select' and text()='$hospitalName')]")
-
-    println('✅ Validation passed for: ' + hospitalName)
+	for (int i = 1; i <= mappingData.getRowNumbers(); i++) {
+		
+		String dropdownName = mappingData.getValue('DropdownName', i)
+		String urlName = mappingData.getValue('URLName', i)
+	
+		TestObject dynamicHospital = new TestObject('dynamicHospital')
+		dynamicHospital.addProperty('xpath', ConditionType.EQUALS,
+			"//li[@role='option' and normalize-space()='" + dropdownName + "']")
+	
+		WebUI.click(findTestObject('Page_MyCareCoverage/hospitalSelector'))
+		WebUI.click(dynamicHospital)
+		WebUI.click(findTestObject('Page_MyCareCoverage/button__GOHospitalSelector'))
+	
+		String currentUrl = WebUI.getUrl().toLowerCase()
+	
+		WebUI.verifyMatch(currentUrl, ".*" + urlName.toLowerCase() + ".*", true)
+	
+		println("✔ Validated: " + dropdownName + " → " + urlName)
     }
     
     WebUI.delay(5) // Optional: reopen dropdown for next iteration

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Hospitals</name>
+   <name>StageHospitalList</name>
    <tag></tag>
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>6f419ad3-24cd-443c-89a4-ec6c6ac42cf7</dataFileGUID>
-   <dataSourceUrl>C:\Users\SilveyaRexee_a3qfdl8\OneDrive - veltris\Desktop\HosTest.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\SilveyaRexee_a3qfdl8\OneDrive - veltris\Desktop\Stage_HospitalList.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

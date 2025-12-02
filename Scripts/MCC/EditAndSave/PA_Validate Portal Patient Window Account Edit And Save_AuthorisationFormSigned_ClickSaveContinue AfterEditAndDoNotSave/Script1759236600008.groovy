@@ -18,9 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], FailureHandling.STOP_ON_FAILURE)
-
-    WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Continue_AddHouseHold'))
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Park View Hospital'), [:], 
+        FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 
@@ -34,9 +33,9 @@ try {
 
     WebUI.switchToWindowIndex(1)
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseholdDisabled'), 0)
+    WebUI.delay(5)
 
-    WebUI.verifyElementNotPresent(findTestObject('Page_MyCareCoverage/SaveAndContinue_Button'), 0)
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/header_HouseHoldPageHeader'), 0)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/Next_Button'))
 
