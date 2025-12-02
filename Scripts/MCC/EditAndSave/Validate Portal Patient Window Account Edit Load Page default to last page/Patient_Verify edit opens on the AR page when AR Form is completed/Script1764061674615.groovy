@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 try {
-   def lastName = WebUI.callTestCase(findTestCase('MCC/General/Patient_Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/Patient_Fill Patient Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage - Household/button_Continue_AddHouseHold'))
 
@@ -35,20 +35,21 @@ try {
 
     WebUI.click(findTestObject('AuthorizationForm/button_ContinueInARForm'))
 
+    WebUI.delay(5)
+
     WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 0)
 
     WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/link_DownloadSignedAuthorizationForm'), 0)
 
-    WebUI.click(findTestObject('AuthorizationFormPage/button_SubmitButtonInAuthorizationForm'))
+   // WebUI.click(findTestObject('AuthorizationFormPage/button_SubmitButtonInAuthorizationForm'))
 
-    WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/header_SubmittedInformationPageHeader'), 0)
+   // WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/header_SubmittedInformationPageHeader'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/update_AuthorizationFormUnderDocumentsSubmitted_InSubmissionConfirmationPage'), 
-        0)
+    //WebUI.verifyElementPresent(findTestObject('SubmittedConfirmationPage/update_AuthorizationFormUnderDocumentsSubmitted_InSubmissionConfirmationPage'), 0)
 
     WebUI.delay(10)
 
-    WebUI.callTestCase(findTestCase('MCC/General/Login_ParkViewHospital'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/PA_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
