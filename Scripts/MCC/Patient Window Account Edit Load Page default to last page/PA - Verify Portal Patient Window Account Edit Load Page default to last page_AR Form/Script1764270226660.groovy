@@ -42,6 +42,8 @@ try {
 
     WebUI.click(findTestObject('AuthorizationForm/button_ContinueInARForm'))
 
+    WebUI.delay(8)
+
     WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/header_AuthorizationFormPageHeader'), 3)
 
     WebUI.verifyElementPresent(findTestObject('AuthorizationFormPage/link_DownloadSignedAuthorizationForm'), 3)

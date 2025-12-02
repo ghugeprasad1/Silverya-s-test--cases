@@ -53,7 +53,7 @@ try {
 	WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/text_verbiage to confirm supporting documents not required to submit completion'),
 			0)
 	
-	WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/documentType_DriversLicense_PhotoID'), 0)
+	WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/documentType_PatientIntakeForm_DriversLicensePhotoID'), 0)
 	
 	WebUI.verifyElementPresent(findTestObject('SupportingDocumentsPage/documentType_NoIncomeLetter'), 0)
 	
