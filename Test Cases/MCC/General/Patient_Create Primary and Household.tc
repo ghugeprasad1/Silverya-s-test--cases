@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Create Primary and Household</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>188b181c-87e1-4044-b4ea-f8e7faf9af72</testCaseGuid>
+</TestCaseEntity>
