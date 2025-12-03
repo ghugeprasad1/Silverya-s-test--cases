@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify Account Summary Window Move insurance option in details_For Primary Patient</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c30f7826-6f79-4475-b1b0-db4bc8b124df</testCaseGuid>
+</TestCaseEntity>

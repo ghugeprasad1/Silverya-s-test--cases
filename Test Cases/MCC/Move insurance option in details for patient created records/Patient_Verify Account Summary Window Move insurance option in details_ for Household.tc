@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Patient_Verify Account Summary Window Move insurance option in details_PatientAndHousehold</name>
+   <name>Patient_Verify Account Summary Window Move insurance option in details_ for Household</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>643155f4-4b1a-462d-9f43-a3f1a2445ffd</testCaseGuid>
+   <testCaseGuid>5d69f5b9-c060-4970-9537-f9737127da6b</testCaseGuid>
 </TestCaseEntity>
