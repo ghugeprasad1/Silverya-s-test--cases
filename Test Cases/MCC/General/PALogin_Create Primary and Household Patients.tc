@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PALogin_Create Primary and Household Patients</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>15d4c69d-b000-4b46-80f2-de8e6bbe5bac</testCaseGuid>
+</TestCaseEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Patient_Verify Account Summary Window Move insurance option in details for patient created records</name>
+   <name>Patient_Verify Account Summary Window Move insurance option in details for created records</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
