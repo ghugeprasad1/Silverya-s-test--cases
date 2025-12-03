@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify the field is not editable when we Move insurance option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>41baf239-04eb-4c8f-9185-cfb01b7c7654</testCaseGuid>
+</TestCaseEntity>
