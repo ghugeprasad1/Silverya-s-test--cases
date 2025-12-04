@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify insurance option is not anywhere else in patient summary other than below name</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2f6d0d2f-ac90-49c1-ad8c-65f6239f0d17</testCaseGuid>
+</TestCaseEntity>
