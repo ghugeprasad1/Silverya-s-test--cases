@@ -19,17 +19,24 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
 try {
-    def lastName1 = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Duplicate Test'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('MCC/General/PALogin_Create 2 Patients for Duplicate Test'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 
-    def lastName2 = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Fill Patient Form for Duplicate Test'), [:], FailureHandling.STOP_ON_FAILURE)
-
-    WebUI.delay(5)
+    WebUI.callTestCase(findTestCase('MCC/General/PA_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
-    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName1)
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
+        2)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/secondrecordDisplayed_PatientTab'), 
+        3)
+
+    WebUI.verifyElementNotPresent(findTestObject('Page_MyCareCoverage - Patient Information/thirdRecordDisplayed_PatientTab'), 
+        2)
 
     TestObject scrollbar = findTestObject('Page_MyCareCoverage - Patient Information/scrollBar_PatientTabBottomScroll')
 
@@ -61,14 +68,32 @@ try {
 
     WebUI.delay(3)
 
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
+        2)
+
+    WebUI.verifyElementNotPresent(findTestObject('Page_MyCareCoverage - Patient Information/secondrecordDisplayed_PatientTab'), 
+        3)
+
     WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/checkbox_IncludeClosedAccounts_InPatientsTab'))
 
     WebUI.delay(3)
 
-    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName2)
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
 
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
         3)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/secondrecordDisplayed_PatientTab'), 
+        2) //    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/checkbox_IncludeClosedAccounts_InPatientsTab'))
+    //
+    //    WebUI.delay(3)
+    //
+    //    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
+    //
+    //    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
+    //        3)
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())

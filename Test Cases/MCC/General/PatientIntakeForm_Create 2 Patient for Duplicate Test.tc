@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PatientIntakeForm_Create 2 Patient for Duplicate Test</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ad307d7d-f230-4f85-9a98-423a4ea153f7</testCaseGuid>
+</TestCaseEntity>

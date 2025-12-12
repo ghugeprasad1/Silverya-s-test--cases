@@ -17,26 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('MCC/General/PA_Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_MyCareCoverage/tab_AddPatientLeftNavigation'))
+WebUI.callTestCase(findTestCase('MCC/General/Patient Entry_HandleCAPTCHA'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Generate unique last name
-String lastName = 'LN' + (1..6).collect({
-		('a'..'z')[new Random().nextInt(26)]
-	}).join()
+String lastName = 'LN' + (1..6).collect({ 
+        ('a'..'z')[new Random().nextInt(26)]
+    }).join()
 
 println('Generated Last Name: ' + lastName)
 
+//WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/header_PatientEntryPageHeader'), 3)
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_LastName'), lastName)
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'), 'test')
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'), 'Automation')
 
 WebUI.click(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'))
 
-WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'), '06/06/1984')
+WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'), '02/02/1990')
 
-WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'), 10)
+WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'), 5)
 
 WebUI.click(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'))
 
@@ -44,25 +43,23 @@ WebUI.click(findTestObject('Page_MyCareCoverage/list_YesAreYouUSCitizen_PatientF
 
 WebUI.click(findTestObject('Page_MyCareCoverage/input_SSN_PatientForm'))
 
-WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_SSN_PatientForm'), '999-55-6666')
+WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_SSN_PatientForm'), '199-11-1254')
 
 WebUI.click(findTestObject('Page_MyCareCoverage/dropdown_Gender'))
 
 WebUI.sendKeys(findTestObject('Page_MyCareCoverage/dropdown_Gender'), 'Male', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_AddressLine1_PatientForm'), '198 SouthWest Expressway')
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_AddressLine1_PatientForm'), '06 Radisson way')
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_City'), 'San Francisco')
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_City'), 'Portland')
 
 WebUI.click(findTestObject('Page_MyCareCoverage/input_State_PatientForm'))
 
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_State_PatientForm'), 'Kentucky')
-//
-//WebUI.click(findTestObject('Page_MyCareCoverage/list_SelectStateOption_PatientForm'))
-//
-//WebUI.click(findTestObject('Page_MyCareCoverage/Page_MyCareCoverage/Page_MyCareCoverage/list_KentuckyStateOption_PatientForm'))
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_ZipCode_PatientForm'), '91919')
+//WebUI.click(findTestObject('Page_MyCareCoverage/list_SelectStateOption_PatientForm'))
+//WebUI.click(findTestObject('Page_MyCareCoverage/Page_MyCareCoverage/Page_MyCareCoverage/list_KentuckyStateOption_PatientForm'))
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_ZipCode_PatientForm'), '33212')
 
 WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_HaveHealthInsurance_PatientForm'))
 
@@ -77,30 +74,31 @@ WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_60DaysLostHealthInsu
 WebUI.click(findTestObject('Page_MyCareCoverage/button_NoIncomeSource_PatientForm'))
 
 WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_LostJobIn6Months_PatientForm'))
+
 WebUI.click(findTestObject('Page_MyCareCoverage/button_Continue_PatientForm'))
 
 WebUI.click(findTestObject('Page_MyCareCoverage/button_ContinueOnReviewOverlay_PatientForm'))
 
-WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/button_AddMember_AddHouseHoldPage'), 5)
+WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_Edit_AddHouseHold'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseHoldMember_PatientIntakeEntry'), 
+    5)
 
 WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_Continue_AddHouseHold'), 5)
 
 WebUI.delay(5)
 
-
-WebUI.click(findTestObject('Page_MyCareCoverage/tab_AddPatientLeftNavigation'))
+WebUI.callTestCase(findTestCase('MCC/General/Patient Entry_HandleCAPTCHA'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_LastName'), lastName)
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'), 'test')
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'), 'Automation')
 
 WebUI.click(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'))
 
-WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'), '06/06/1984')
+WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'), '02/02/1990')
 
-WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'), 10)
+WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'), 5)
 
 WebUI.click(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'))
 
@@ -108,25 +106,23 @@ WebUI.click(findTestObject('Page_MyCareCoverage/list_YesAreYouUSCitizen_PatientF
 
 WebUI.click(findTestObject('Page_MyCareCoverage/input_SSN_PatientForm'))
 
-WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_SSN_PatientForm'), '999-55-6666')
+WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_SSN_PatientForm'), '199-11-1254')
 
 WebUI.click(findTestObject('Page_MyCareCoverage/dropdown_Gender'))
 
 WebUI.sendKeys(findTestObject('Page_MyCareCoverage/dropdown_Gender'), 'Male', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_AddressLine1_PatientForm'), '100 Thomas Street')
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_AddressLine1_PatientForm'), '06 Radisson way')
 
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_City'), 'San Jose')
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_City'), 'Portland')
 
 WebUI.click(findTestObject('Page_MyCareCoverage/input_State_PatientForm'))
 
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_State_PatientForm'), 'Kentucky')
 
 //WebUI.click(findTestObject('Page_MyCareCoverage/list_SelectStateOption_PatientForm'))
-
 //WebUI.click(findTestObject('Page_MyCareCoverage/Page_MyCareCoverage/Page_MyCareCoverage/list_KentuckyStateOption_PatientForm'))
-
-WebUI.setText(findTestObject('Page_MyCareCoverage/input_ZipCode_PatientForm'), '91919')
+WebUI.setText(findTestObject('Page_MyCareCoverage/input_ZipCode_PatientForm'), '33212')
 
 WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_HaveHealthInsurance_PatientForm'))
 
@@ -146,9 +142,10 @@ WebUI.click(findTestObject('Page_MyCareCoverage/button_Continue_PatientForm'))
 
 WebUI.click(findTestObject('Page_MyCareCoverage/button_ContinueOnReviewOverlay_PatientForm'))
 
-WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage/button_AddMember_AddHouseHoldPage'), 5)
+WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_Edit_AddHouseHold'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_AddHouseHoldMember_PatientIntakeEntry'),
+	5)
 
 WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/button_Continue_AddHouseHold'), 5)
 
@@ -156,3 +153,4 @@ WebUI.delay(5)
 
 // return lastName for Next step input
 return lastName
+
