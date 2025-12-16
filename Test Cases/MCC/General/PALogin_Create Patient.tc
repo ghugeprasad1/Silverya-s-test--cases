@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>PALogin_Create Patient</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>f71447fe-f9c1-4091-866f-3b62536009f8</testCaseGuid>
-</TestCaseEntity>
