@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Create 1st Patient For Duplicate</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>41f96626-8534-4d8e-a6e2-409dba4233fb</testCaseGuid>
+</TestCaseEntity>

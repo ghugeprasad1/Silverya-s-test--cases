@@ -12,63 +12,63 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>48325ded-8fea-4a7e-855c-522e3267abb9</testSuiteGuid>
    <testCaseLink>
-      <guid>a9dbb96f-e70e-402b-b019-6bb37922a0fb</guid>
+      <guid>002caf1f-f3cb-40e9-b15e-97bf971edf4f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/Patient_Verify the question added to patient intake for if they have will lose insurance in 60 days</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1dcc70a9-eaa9-4aa3-a6f1-36f074de74db</guid>
+      <guid>4f15f73a-f4f1-454d-b7fa-9d75aaf3b5e6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/Patient_Verify the question added to patient intake for if they have will lose insurance in 60 days_Click NO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>b201786e-8435-4e54-b01e-944a9a834659</guid>
+      <guid>c95ea449-4ce4-471c-9ed0-c556196e2186</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/Patient_Verify the question added to patient intake for if they have will lose insurance in 60 days_Click YES</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8ecccafa-4a87-4428-aa79-b38c79dc0435</guid>
+      <guid>995e061c-f0e4-442a-8896-c3a6e7e1076a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/Patient_Verify the question added to patient intake form if they have will lose insurance in 60 days_FillPatientFormSuccessfully</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>68c998c1-62b1-422d-8f86-3ca176b30d1b</guid>
+      <guid>8f84b8d0-799f-432a-89be-a5304dc3dd44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/PA_Verify the question added to patient intake for if they have will lose insurance in 60 days_Click NO</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1dc6168a-68a4-4a4f-afe6-af6412d383ac</guid>
+      <guid>9e1f7e6e-90d2-467b-a7c0-1a8b09dca0b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/PA_Verify the question added to patient intake for if they have will lose insurance in 60 days_Click YES</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>18059f7b-e995-4cbc-80c1-39639ba5dd78</guid>
+      <guid>b06d4ab6-ee99-46e2-9924-5d7310d5c1bc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/PA_Verify the question added to patient intake for if they have will lose insurance in 60 days_EntryAddPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>571f81fd-13d4-41e8-a715-85b4728ce7fc</guid>
+      <guid>4a24161b-9cba-4ba2-bb73-ab798ddacf10</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/PA_Verify the question added to patient intake for if they have will lose insurance in 60 days_EntryPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>20b60d6a-35a4-4e5d-ad47-2daf3a67a142</guid>
+      <guid>6353349d-2154-4c1b-b54a-41e98800cd45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/QuestionLoseInsurabce60Days/PA_Verify the question added to patient intake for if they have will lose insurance in 60 days_FillPatientFormSuccessfully</testCaseId>

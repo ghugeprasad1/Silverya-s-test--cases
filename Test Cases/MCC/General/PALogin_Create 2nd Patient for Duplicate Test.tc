@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PALogin_Create 2nd Patient for Duplicate Test</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ed410fce-19ec-47e1-a72a-247dae7b2d88</testCaseGuid>
+</TestCaseEntity>

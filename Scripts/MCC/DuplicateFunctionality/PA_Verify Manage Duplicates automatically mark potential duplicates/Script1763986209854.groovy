@@ -19,23 +19,57 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
 try {
-    WebUI.callTestCase(findTestCase('MCC/General/PALogin_Create 2 Patients for Duplicate Test'), [:], FailureHandling.STOP_ON_FAILURE)
+    //Generate ONE unique last name
+    String lastName = 'LN' + (1..6).collect({ 
+            ('a'..'z')[new Random().nextInt(26)]
+        }).join()
+
+    println("Using LAST NAME for both patients: $lastName")
+
+    //Common patient data
+    Map patientData = [('firstName') : 'Automation', ('lastName') : lastName, ('dob') : '06/06/1984', ('ssn') : '999-55-6666'
+        , ('zip') : '91919']
+
+    //    Map patientData = [('firstName') : 'Automation', ('lastName') : 'ManageDuplicate', ('dob') : '06/06/1984', ('ssn') : '999-55-6666'
+    //        , ('zip') : '91919']
+    WebUI.callTestCase(findTestCase('MCC/General/PALogin_Create 1st Patient For Duplicate'), patientData, FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 
+    WebUI.callTestCase(findTestCase('MCC/General/PALogin_Create 2nd Patient for Duplicate Test'), patientData, FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.delay(10)
+
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
 
-    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName2)
+    WebUI.executeJavaScript('document.querySelector("button svg[data-testid=\'RefreshIcon\']").closest(\'button\').click();', 
+        null)
+
+    // Wait for browser alert
+    WebUI.waitForAlert(5)
+
+    // Accept (click OK)
+    WebUI.acceptAlert()
+
+    WebUI.delay(5)
+
+    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), patientData.lastName)
 
     TestObject scrollbar = findTestObject('Page_MyCareCoverage - Patient Information/scrollBar_PatientTabBottomScroll')
 
     WebUI.executeJavaScript('arguments[0].scrollLeft = arguments[0].scrollWidth;', [WebUI.findWebElement(scrollbar)])
 
-    // Scroll the window to the rightmost
+    // Scroll the window to the rightmost and check first row
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'), 
         5)
 
     WebUI.verifyElementClickable(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'))
+
+    // Scroll the window to the rightmost and check second row
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtSecondRow'), 
+        5)
+
+    WebUI.verifyElementClickable(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtSecondRow'))
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())

@@ -12,56 +12,56 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>66ab1705-1262-4f19-a3b1-cdb8cfae5c9c</testSuiteGuid>
    <testCaseLink>
-      <guid>4348f442-8076-4d81-a76a-7e313560a7cd</guid>
+      <guid>c0ed9d67-e8d5-48e1-972f-c387e0bd64fc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/Patient_Verify the field Admittance Date is not present</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5c3a451d-9f2e-4978-8836-9eddea29553a</guid>
+      <guid>6abefa8e-20a8-42c7-8c7a-dde7e58ffe51</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/PA_Verify the field Admittance Date is present and its Datatype_EntryAddPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5e0aa920-fe20-4e28-a39e-235bf5c1fd21</guid>
+      <guid>3b133c04-6bc9-4d9d-82b0-adeb3d01ace8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/PA_Verify the field Admittance Date is present and its Datatype_EntryPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8d48fec1-0faa-4867-8405-2cd51226a7d8</guid>
+      <guid>b06408ae-2c72-4e40-beeb-da9aebc43947</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/PA_Verify the field Admittance Date with a invalid date and message displayed_EntryAddPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>28922879-d021-4e9e-9b06-caa1141b4624</guid>
+      <guid>90bedd34-67b8-44ea-80c5-c2ebcdadbb17</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/PA_Verify the field Admittance Date with a invalid date and message displayed_EntryPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>db8319b5-aa77-4461-b16d-229f0b41cc3c</guid>
+      <guid>f98d0cd0-f712-4e5d-bd11-dd2e77566daf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/PA_Verify the field Admittance Date with a valid date_EntryAddPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f1249c4b-3d17-41d7-b454-bbd3c83ee35e</guid>
+      <guid>4e085c16-bf71-4c32-88b5-9f6447eb8480</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/PA_Verify the field Admittance Date with a valid date_EntryPatientTab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>61ba313b-4036-4e49-9f04-96b1d0f98741</guid>
+      <guid>af493f31-80ec-422a-92c5-8242d5f6e52e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/MCC/AdmittanceDate/PA_Verify the field Admittance Date_Fill PatientForm with Admittance Date Successfully</testCaseId>

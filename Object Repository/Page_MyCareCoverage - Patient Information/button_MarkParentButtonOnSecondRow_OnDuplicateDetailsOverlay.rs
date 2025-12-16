@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>checkbox_No_LostJobIn6Months_PatientForm</name>
+   <name>button_MarkParentButtonOnSecondRow_OnDuplicateDetailsOverlay</name>
    <tag></tag>
-   <elementGuidId>74b5b8a3-fdc1-4b2a-b68d-46f9c49c321f</elementGuidId>
+   <elementGuidId>2e17e221-e70f-45f6-95e0-024382829515</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@role='radiogroup' and @aria-labelledby='lost-job-label']//input[@type='radio' and @value='no']</value>
+         <value>(//button[normalize-space(text())='Mark Parent'])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>

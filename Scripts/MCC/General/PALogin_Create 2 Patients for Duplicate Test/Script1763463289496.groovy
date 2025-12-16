@@ -22,9 +22,9 @@ WebUI.callTestCase(findTestCase('MCC/General/PA_Login'), [:], FailureHandling.ST
 WebUI.click(findTestObject('Page_MyCareCoverage/tab_AddPatientLeftNavigation'))
 
 // Generate unique last name
-String lastName = 'LN' + (1..6).collect({
-		('a'..'z')[new Random().nextInt(26)]
-	}).join()
+String lastName = 'LN' + (1..6).collect({ 
+        ('a'..'z')[new Random().nextInt(26)]
+    }).join()
 
 println('Generated Last Name: ' + lastName)
 
@@ -35,6 +35,8 @@ WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'),
 WebUI.click(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'))
 
 WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'), '06/06/1984')
+
+WebUI.delay(5)
 
 WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'), 10)
 
@@ -57,11 +59,11 @@ WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_City'), 'San
 WebUI.click(findTestObject('Page_MyCareCoverage/input_State_PatientForm'))
 
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_State_PatientForm'), 'Kentucky')
+
 //
 //WebUI.click(findTestObject('Page_MyCareCoverage/list_SelectStateOption_PatientForm'))
 //
 //WebUI.click(findTestObject('Page_MyCareCoverage/Page_MyCareCoverage/Page_MyCareCoverage/list_KentuckyStateOption_PatientForm'))
-
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_ZipCode_PatientForm'), '91919')
 
 WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_HaveHealthInsurance_PatientForm'))
@@ -77,7 +79,10 @@ WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_60DaysLostHealthInsu
 WebUI.click(findTestObject('Page_MyCareCoverage/button_NoIncomeSource_PatientForm'))
 
 WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_LostJobIn6Months_PatientForm'))
+
 WebUI.click(findTestObject('Page_MyCareCoverage/button_Continue_PatientForm'))
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_MyCareCoverage/button_ContinueOnReviewOverlay_PatientForm'))
 
@@ -89,7 +94,6 @@ WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Household/butto
 
 WebUI.delay(5)
 
-
 WebUI.click(findTestObject('Page_MyCareCoverage/tab_AddPatientLeftNavigation'))
 
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_LastName'), lastName)
@@ -99,6 +103,8 @@ WebUI.setText(findTestObject('Page_MyCareCoverage/input_PatientForm_FirstName'),
 WebUI.click(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'))
 
 WebUI.sendKeys(findTestObject('Page_MyCareCoverage/input_PatientForm_DateOfBirth'), '06/06/1984')
+
+WebUI.delay(5)
 
 WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage/list_AreYouACitizen_PatientForm'), 10)
 
@@ -123,9 +129,7 @@ WebUI.click(findTestObject('Page_MyCareCoverage/input_State_PatientForm'))
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_State_PatientForm'), 'Kentucky')
 
 //WebUI.click(findTestObject('Page_MyCareCoverage/list_SelectStateOption_PatientForm'))
-
 //WebUI.click(findTestObject('Page_MyCareCoverage/Page_MyCareCoverage/Page_MyCareCoverage/list_KentuckyStateOption_PatientForm'))
-
 WebUI.setText(findTestObject('Page_MyCareCoverage/input_ZipCode_PatientForm'), '91919')
 
 WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_HaveHealthInsurance_PatientForm'))
@@ -142,7 +146,11 @@ WebUI.click(findTestObject('Page_MyCareCoverage/button_NoIncomeSource_PatientFor
 
 WebUI.check(findTestObject('Page_MyCareCoverage/checkbox_No_LostJobIn6Months_PatientForm'))
 
+WebUI.delay(15)
+
 WebUI.click(findTestObject('Page_MyCareCoverage/button_Continue_PatientForm'))
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_MyCareCoverage/button_ContinueOnReviewOverlay_PatientForm'))
 
@@ -156,3 +164,4 @@ WebUI.delay(5)
 
 // return lastName for Next step input
 return lastName
+

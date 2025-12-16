@@ -309,7 +309,7 @@
       <guid>269721d8-ff89-4b86-a62f-5c4cdda6e3fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/MCC/Patient_Verify Account Summary Window Move insurance option in details for patient created records</testCaseId>
+      <testCaseId>Test Cases/MCC/Move insurance option in details for patient created records/Patient_Verify Account Summary Window Move insurance option in details_for Primary Patient</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
