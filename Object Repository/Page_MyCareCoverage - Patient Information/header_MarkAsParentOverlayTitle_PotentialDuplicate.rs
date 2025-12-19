@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_MarkDuplicateButtonForFirstRow_OnDuplicateDetailsOverlay</name>
+   <name>header_MarkAsParentOverlayTitle_PotentialDuplicate</name>
    <tag></tag>
-   <elementGuidId>cb118b69-e985-46e0-a9fe-0b516c38ade8</elementGuidId>
+   <elementGuidId>a6e710ad-f209-478d-8cf4-a8c6a7f36aeb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[normalize-space(text())='Mark Duplicate'])[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//h2[@id='customized-dialog-title' and normalize-space()='Mark as Parent?']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

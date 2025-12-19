@@ -33,16 +33,16 @@ TestObject recaptchaFrame = new TestObject('recaptchaFrame')
 
 recaptchaFrame.addProperty('xpath', ConditionType.EQUALS, '//iframe[contains(@name,\'a-\') and contains(@src,\'recaptcha\')]')
 
-WebUI.waitForElementVisible(recaptchaFrame, 5)
+WebUI.waitForElementVisible(recaptchaFrame, 2)
 
-WebUI.switchToFrame(recaptchaFrame, 5)
+WebUI.switchToFrame(recaptchaFrame, 2)
 
 // Dynamic checkbox
 TestObject recaptchaCheckbox = new TestObject('recaptchaCheckbox')
 
 recaptchaCheckbox.addProperty('xpath', ConditionType.EQUALS, '//span[@id=\'recaptcha-anchor\']')
 
-WebUI.waitForElementClickable(recaptchaCheckbox, 5)
+WebUI.waitForElementClickable(recaptchaCheckbox, 2)
 
 WebUI.click(recaptchaCheckbox)
 
@@ -50,4 +50,3 @@ WebUI.click(recaptchaCheckbox)
 WebUI.switchToDefaultContent()
 
 WebUI.click(findTestObject('Page_MyCareCoverage/button_Login'))
-

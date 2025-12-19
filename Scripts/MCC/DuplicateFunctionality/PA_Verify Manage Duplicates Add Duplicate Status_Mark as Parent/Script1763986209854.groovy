@@ -19,18 +19,21 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
 try {
-    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Create 2 Patients for Duplicate Test'), [:], FailureHandling.STOP_ON_FAILURE)
+    def lastName = WebUI.callTestCase(findTestCase('MCC/General/PALogin_Create Duplicate Patients'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(5)
 
     WebUI.callTestCase(findTestCase('MCC/General/PA_Login'), [:], FailureHandling.STOP_ON_FAILURE)
-	
+
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
+
+    WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
+        0)
 
     WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
-        2)
+    WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
+        0)
 
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/secondrecordDisplayed_PatientTab'), 
         3)
@@ -46,32 +49,41 @@ try {
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'), 
         5)
 
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtSecondRow'), 
+        5)
+
     WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'))
 
-    //Verify the Duplicate overlay
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/header_DuplicateOverlayTitle'), 
-        0)
-
-    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkParentButtonOnFirstRow_OnDuplicateDetailsOverlay'))
-
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/header_MarkDuplicateOverlayTitle'), 
-        0)
-
-    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_YesButton_OnMarkDuplicateConfirmationMessage'))
+    WebUI.waitForElementVisible(findTestObject('Page_MyCareCoverage - Patient Information/header_DuplicateOverlayTitle'), 
+        5)
 
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkParentButtonOnFirstRow_OnDuplicateDetailsOverlay'), 
         0)
 
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkDuplicateButtonForFirstRow_OnDuplicateDetailsOverlay'), 
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkParentButtonOnSecondRow_OnDuplicateDetailsOverlay'), 
         0)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkParentButtonOnFirstRow_OnDuplicateDetailsOverlay'))
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/header_MarkAsParentOverlayTitle_PotentialDuplicate'), 
+        0)
+
+    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_YesButton_OnMarkDuplicateConfirmationMessage'))
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/Yes_MarkParentYes_DuplicateDetailsOverlay'), 
+        0)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkDuplicateButtonForFirstRow_OnDuplicateDetailsOverlay'), 
+        2)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/button_MarkParentButtonOnFirstRow_OnDuplicateDetailsOverlay'), 
+        2)
 
     WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/button_CloseIcon_DuplicateDetailsOverlayClose'))
 
     WebUI.click(findTestObject('Page_MyCareCoverage/tab_AddPatientLeftNavigation'))
 
     WebUI.click(findTestObject('Page_MyCareCoverage/PatientTab'))
-
-    WebUI.clearText(findTestObject('Page_MyCareCoverage/PatientSearch'))
 
     WebUI.delay(3)
 
@@ -80,27 +92,18 @@ try {
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
         2)
 
-    WebUI.verifyElementNotPresent(findTestObject('Page_MyCareCoverage - Patient Information/secondrecordDisplayed_PatientTab'), 
-        3)
-
-    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/checkbox_IncludeClosedAccounts_InPatientsTab'))
-
-    WebUI.delay(3)
-
-    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
-
-    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
-        3)
-
     WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/secondrecordDisplayed_PatientTab'), 
-        2 //    WebUI.click(findTestObject('Page_MyCareCoverage - Patient Information/checkbox_IncludeClosedAccounts_InPatientsTab'))
-        //
-        ) //    WebUI.delay(3)
-    //
-    //    WebUI.setText(findTestObject('Page_MyCareCoverage/PatientSearch'), lastName)
-    //
-    //    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/firstrecordDisplayed_PatientTab'), 
-    //        3)
+        3)
+
+    //	TestObject scrollbar = findTestObject('Page_MyCareCoverage - Patient Information/scrollBar_PatientTabBottomScroll')
+    WebUI.executeJavaScript('arguments[0].scrollLeft = arguments[0].scrollWidth;', [WebUI.findWebElement(scrollbar)])
+
+    // Scroll the window to the rightmost
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtFirstRow'), 
+        5)
+
+    WebUI.verifyElementPresent(findTestObject('Page_MyCareCoverage - Patient Information/value_PotentialDuplicateYes_AtSecondRow'), 
+        5)
 }
 catch (Exception e) {
     WebUI.comment('❌ Test failed: ' + e.getMessage())
@@ -112,6 +115,6 @@ catch (Exception e) {
 // You can log or take a screenshot here if needed
 // rethrow for reporting
 finally { 
-    WebUI.closeBrowser()
+     WebUI.closeBrowser()
 }
 
