@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Patient_Verify Manage Duplicates Add Duplicate Status_MarkParentAndThenDuplicate</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7352e8f3-e013-4e56-8f61-fbdee4d14a63</testCaseGuid>
+</TestCaseEntity>

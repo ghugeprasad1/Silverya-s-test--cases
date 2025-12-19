@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PA_Verify Manage Duplicates Add Duplicate Status_MarkParentAndThenDuplicate</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ea890034-8456-4317-8b94-4bd03b4a8116</testCaseGuid>
+</TestCaseEntity>
