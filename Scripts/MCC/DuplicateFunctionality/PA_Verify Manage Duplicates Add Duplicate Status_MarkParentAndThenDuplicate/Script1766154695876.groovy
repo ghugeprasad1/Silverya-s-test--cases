@@ -127,8 +127,6 @@ catch (Exception e) {
 
     throw e
 } 
-// You can log or take a screenshot here if needed
-// rethrow for reporting
 finally { 
      WebUI.closeBrowser()
 }
